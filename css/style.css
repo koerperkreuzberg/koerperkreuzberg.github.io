@@ -110,11 +110,11 @@ wbr:after {
 }
 
 .loader {
-	background: url('/img/mobile_2.jpg')
-							url('/img/mobile_3.jpg')
-							url('/img/mobile_4.jpg')
-							url('/img/mobile_5.jpg')
-							url('/img/mobile_6.jpg')
+	background: url('/img/mobile_2.jpg'),
+							url('/img/mobile_3.jpg'),
+							url('/img/mobile_4.jpg'),
+							url('/img/mobile_5.jpg'),
+							url('/img/mobile_6.jpg'),
 							url('/img/mobile_7.jpg');
 }
 	
@@ -285,9 +285,9 @@ h5 {
 	}
 
 	.loader {
-		background: url('/img/desktop_2.jpg')
-								url('/img/desktop_3.jpg')
-								url('/img/desktop_4.jpg')
+		background: url('/img/desktop_2.jpg'),
+								url('/img/desktop_3.jpg'),
+								url('/img/desktop_4.jpg'),
 								url('/img/desktop_5.jpg');
 	}
 
