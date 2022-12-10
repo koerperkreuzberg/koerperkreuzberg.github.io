@@ -29,7 +29,10 @@
 			<div class="inactive" id="burger-opts">
 				<ul>
 					<li><a href="about" data-navigo>About</a></li>
-					<li><a href="contact" data-navigo>Contact</a></li>
+					<li><a href="personal" data-navigo>Personal Training</a></li>
+					<li><a href="gruppe" data-navigo>Gruppe</a></li>
+					<li><a href="contact" data-navigo>Kontakt</a></li>
+					<li><a href="http://www.koerperkreuzberg.bigcartel.com/" target="_new">Store</a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,20 +46,75 @@
 		<div class="section inactive" id="about">
 			<div class="container">
 				<p>
-					K&#x14D;rper is a place of physical practice based on two
-					foundational pillars: the development of strength &amp; skills
-					through different disciplines such as gymnastics, martial arts
-					and dance. And the exploration of movement through play
-					and improvisation. This is a group practice – cultivating an
-					expe&shy;rience of community and inter&shy;action. From body to body.
-					From being taught to learning.
+					K&#x14D;rper is a place of physical practice and the passion for human development.
+					Our Training is based on two foundational pillars: the development of strength &amp;
+					skills and the exploration of movement. You will move your body against resistance,
+					through larger ranges of motion, lift weights, hang from rings and try new things.
 				</p>
 				<p>
 					K&#x14D;rper is suitable for everyone. For people of all ages and
 					gen&shy;ders, whether you already have an active lifestyle or not.
-					For ath&shy;letes from different fields and disciplines.<br />
-					All those that are interested in a holistic approach to
-					human development.
+				</p>
+				<p>
+					We offer guided personal training &amp; group classes.
+				</p>
+
+			</div> <!-- container -->
+		</div> <!-- section -->
+
+		<div class="section inactive" id="personal">
+			<div class="container">
+				<p>
+				Your goals &amp; your needs.<br />
+				We help you embrace your own process and love every part of the way.
+				</p>
+				<p>
+				Move better &amp; feel better.<br />
+				Build muscle &amp; lose weight.<br />
+				Just being better.
+				</p>
+				<p>
+				At your time &amp; your pace.<br />
+				With your requirements &amp; possibilities.
+				</p>
+
+				<p>
+				1 Session 129,00€<br />
+				10 Pack 122,00€/session<br />
+				25 Pack 120,00€/session<br />
+				50 Pack 118,00€/session
+				</p>
+
+			</div> <!-- container -->
+		</div> <!-- section -->
+
+		<div class="section inactive" id="gruppe">
+			<div class="container">
+				<p>
+				Ein Körper beginnt und endet gegen einen anderen Körper.
+				</p>
+				<p>
+				This is a group practice – cultivating an expe­rience of community and interaction.
+				From body to body. From being taught to learning.
+				We utilize the best tools from different disciplines such as gymnastics, dance and
+				martial arts. We explore movement through play and improvisation, lift weights and
+				work with our partners.
+				</p>
+
+				<p>
+				No dogmas &amp; no trends.<br />
+				We work with principles and a well thought out process that we continuously develop.
+				</p>
+
+				<p>
+				2 Sessions/week - 99€/month<br />
+				3 Sessions/week - 129€/month<br />
+				Unlimited - 159€/month
+				</p>
+
+				<p>
+				Mon-Thu: 19h<br />
+				Sa &amp; Sun: 11h
 				</p>
 
 			</div> <!-- container -->
@@ -69,11 +127,8 @@
 					<div>Instagram: <a href="https://instagram.com/koerperkreuzberg">@koerperkreuzberg</a></div>
 				</div>
 				<div class="vcard">
-					<div>say hi &amp; book a trial</div>
+					<div>say hi &amp; book a session</div>
 					<a href="mailto:info@koerperkreuzberg.com" class="normal email">info@koerperkreuzberg.com</a>
-				</div>
-				<div>
-					<a href="https://goteamup.com/p/2002651-korper-kreuzberg/">our schedule.</a>
 				</div>
 				<div>
 					<div class="org">K&#x14D;rper Kreuzberg</div>
@@ -265,6 +320,26 @@
 					before: function(done, params) {
 						document.getElementById('menu').classList.add('amenu')
 						Focus('about')
+						done()
+					},
+					leave: function(params) {
+						document.getElementById('menu').classList.remove('amenu')
+					}
+				})
+				.on('personal', function() { }, {
+					before: function(done, params) {
+						document.getElementById('menu').classList.add('amenu')
+						Focus('personal')
+						done()
+					},
+					leave: function(params) {
+						document.getElementById('menu').classList.remove('amenu')
+					}
+				})
+				.on('gruppe', function() { }, {
+					before: function(done, params) {
+						document.getElementById('menu').classList.add('amenu')
+						Focus('gruppe')
 						done()
 					},
 					leave: function(params) {
